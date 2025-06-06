@@ -2,13 +2,13 @@ import 'package:flutter/foundation.dart';
 
 @immutable
 /// Abstract interface for defining font families within the design system.
-abstract class OrigamiFontFamilies {
+abstract class AbstractFontFamilies {
   /// A const constructor for classes that implement this interface.
-  const OrigamiFontFamilies();
+  const AbstractFontFamilies();
 
-  /// The base font family for general text.
-  String get base => 'Roboto';
+  /// The primary font family for general text.
+  String get primary;
 
   /// The font family for headings.
-  String get headings => 'Merriweather';
+  String get secondary;
 }

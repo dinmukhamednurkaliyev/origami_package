@@ -2,6 +2,11 @@ name: origami_package
 description: "The Origami toolkit for Flutter: utilities and widgets to help you shape elegant, responsive, and adaptive user interfaces with precision and ease."
 version: 0.0.1
 #homepage:
+topics:
+- design-system
+- theme
+- ui-kit
+- origami
 environment:
   sdk: ^3.8.0
   flutter: ">=1.17.0"

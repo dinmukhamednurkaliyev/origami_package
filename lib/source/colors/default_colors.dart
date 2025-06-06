@@ -1,4 +1,5 @@
-import 'package:flutter/material.dart';
+import 'dart:ui';
+
 import 'package:origami_package/origami_package.dart';
 
 /// The default implementation of the [OrigamiColors] for the design system.
@@ -7,11 +8,18 @@ class DefaultColors extends OrigamiColors {
   const DefaultColors();
 
   @override
-  Color get primary => Colors.deepPurple;
+  // TODO: implement scaffoldBackground
+  Color get background => throw UnimplementedError();
 
   @override
-  Color get scaffoldBackground => const Color(0xFFF5F5F5);
+  // TODO: implement primary
+  Color get primary => throw UnimplementedError();
 
   @override
-  Color get text => Colors.black87;
+  // TODO: implement secondary
+  Color get secondary => throw UnimplementedError();
+
+  @override
+  // TODO: implement text
+  Color get text => throw UnimplementedError();
 }
