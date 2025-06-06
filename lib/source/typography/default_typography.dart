@@ -3,9 +3,10 @@ import 'package:origami_package/origami_package.dart';
 
 /// The default implementation of the [OrigamiTypography] for the design system.
 class DefaultTypography extends OrigamiTypography {
-  static const String _fontFamily = 'YourFontFamily';
-
+  /// Creates a const instance of the default typography values.
   const DefaultTypography();
+
+  static const String _fontFamily = 'YourFontFamily';
 
   @override
   TextStyle get bodyLarge => const TextStyle(

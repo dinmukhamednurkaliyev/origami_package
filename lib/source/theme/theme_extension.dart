@@ -4,15 +4,7 @@ import 'package:origami_package/origami_package.dart';
 /// The main theme extension for the Origami design system.
 @immutable
 class OrigamiThemeExtension extends ThemeExtension<OrigamiThemeExtension> {
-  final OrigamiColors colors;
-
-  final OrigamiBreakpoints breakpoints;
-  final OrigamiMargins margins;
-  final OrigamiPaddings paddings;
-  final OrigamiSpacing spacing;
-  final OrigamiTypography typography;
-
-  /// Creates the theme extension.
+  /// Creates a const instance of [OrigamiThemeExtension] with the given values.
   const OrigamiThemeExtension({
     required this.colors,
     required this.breakpoints,
@@ -21,6 +13,24 @@ class OrigamiThemeExtension extends ThemeExtension<OrigamiThemeExtension> {
     required this.spacing,
     required this.typography,
   });
+
+  /// Theme colors.
+  final OrigamiColors colors;
+
+  /// Theme breakpoints.
+  final OrigamiBreakpoints breakpoints;
+
+  /// Theme margins.
+  final OrigamiMargins margins;
+
+  /// Theme paddings.
+  final OrigamiPaddings paddings;
+
+  /// Theme spacing.
+  final OrigamiSpacing spacing;
+
+  /// Theme typography.
+  final OrigamiTypography typography;
 
   @override
   OrigamiThemeExtension copyWith({

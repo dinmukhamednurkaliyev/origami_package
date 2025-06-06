@@ -6,17 +6,17 @@ class DefaultBreakpoints extends OrigamiBreakpoints {
   const DefaultBreakpoints();
 
   @override
-  double get extraLarge => 1440.0;
+  double get extraLarge => 1440;
 
   @override
-  double get extraSmall => 320.0;
+  double get extraSmall => 320;
 
   @override
-  double get large => 1200.0;
+  double get large => 1200;
 
   @override
-  double get medium => 900.0;
+  double get medium => 900;
 
   @override
-  double get small => 600.0;
+  double get small => 600;
 }

@@ -6,20 +6,20 @@ class DefaultSpacing extends OrigamiSpacing {
   const DefaultSpacing();
 
   @override
-  double get extraLarge => 32.0;
+  double get extraLarge => 32;
 
   @override
-  double get extraSmall => 4.0;
+  double get extraSmall => 4;
 
   @override
-  double get large => 24.0;
+  double get large => 24;
 
   @override
-  double get medium => 16.0;
+  double get medium => 16;
 
   @override
-  double get none => 0.0;
+  double get none => 0;
 
   @override
-  double get small => 8.0;
+  double get small => 8;
 }

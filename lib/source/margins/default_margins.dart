@@ -7,8 +7,8 @@ class DefaultMargins extends OrigamiMargins {
   const DefaultMargins();
 
   @override
-  EdgeInsetsGeometry get allSmall => const EdgeInsets.all(8.0);
+  EdgeInsetsGeometry get allSmall => const EdgeInsets.all(8);
 
   @override
-  EdgeInsetsGeometry get bottomLarge => const EdgeInsets.only(bottom: 24.0);
+  EdgeInsetsGeometry get bottomLarge => const EdgeInsets.only(bottom: 24);
 }

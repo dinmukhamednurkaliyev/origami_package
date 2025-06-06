@@ -3,10 +3,16 @@ import 'package:flutter/widgets.dart';
 /// Abstract interface for defining text styles within the design system.
 @immutable
 abstract class OrigamiTypography {
+  /// A const constructor for classes that implement this interface.
   const OrigamiTypography();
 
+  /// Text style for large body text.
   TextStyle get bodyLarge;
+
+  /// Text style for medium body text.
   TextStyle get bodyMedium;
+
+  /// TextStyle get bodySmall;
   TextStyle get bodySmall;
 
   TextStyle get button;
