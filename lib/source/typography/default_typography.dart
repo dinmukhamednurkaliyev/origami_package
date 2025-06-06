@@ -89,7 +89,7 @@ class DefaultTypography extends OrigamiTypography {
   @override
   TextStyle get headlineLarge => TextStyle(
     fontFamily: families.secondary,
-    fontSize: fontSizes.large, // 20.0
+    fontSize: fontSizes.large,
     fontWeight: fontWeights.bold,
     height: lineHeights.tight,
   );
@@ -97,7 +97,7 @@ class DefaultTypography extends OrigamiTypography {
   @override
   TextStyle get headlineMedium => TextStyle(
     fontFamily: families.secondary,
-    fontSize: fontSizes.medium, // 16.0
+    fontSize: fontSizes.medium,
     fontWeight: fontWeights.bold,
     height: lineHeights.tight,
   );
