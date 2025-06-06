@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:origami_package/origami_package.dart';
 
 /// Abstract interface for defining text styles within the design system.
 @immutable
@@ -16,7 +17,11 @@ abstract class OrigamiTypography {
   TextStyle get bodySmall;
 
   TextStyle get button;
+
   TextStyle get caption;
+
+  OrigamiFontFamilies get families;
+  OrigamiFontSizes get fontSizes;
 
   TextStyle get headline1;
   TextStyle get headline2;

@@ -40,6 +40,12 @@ class DefaultTypography extends OrigamiTypography {
   );
 
   @override
+  OrigamiFontFamilies get families => const DefaultFontFamilies();
+
+  @override
+  OrigamiFontSizes get fontSizes => const DefaultFontSizes();
+
+  @override
   TextStyle get headline1 => const TextStyle(
     fontFamily: _fontFamily,
     fontSize: 32,
