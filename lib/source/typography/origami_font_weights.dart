@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 @immutable
 /// A set of constant font weight for the Origami design system.
-abstract class AbstractFontWeights {
+abstract class OrigamiFontWeights {
   /// A const constructor for classes that implement this interface.
-  const AbstractFontWeights();
+  const OrigamiFontWeights();
 
   /// The bold font weight.
   FontWeight get bold;

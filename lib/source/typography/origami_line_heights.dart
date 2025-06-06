@@ -3,9 +3,9 @@ import 'package:flutter/foundation.dart';
 /// Abstract interface for defining line heights within the design system.
 /// Line height is a multiplier of the font size.
 @immutable
-abstract class AbstractLineHeights {
+abstract class OrigamiLineHeights {
   /// A const constructor for classes that implement this interface.
-  const AbstractLineHeights();
+  const OrigamiLineHeights();
 
   /// Loose line height, for special cases where more space is needed.
   double get loose;

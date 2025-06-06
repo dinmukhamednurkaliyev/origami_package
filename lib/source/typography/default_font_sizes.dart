@@ -1,7 +1,7 @@
 import 'package:origami_package/origami_package.dart';
 
 /// Default font sizes for Origami components
-class DefaultFontSizes extends AbstractFontSizes {
+class DefaultFontSizes extends OrigamiFontSizes {
   /// Creates a const instance of the default font sizes.
   const DefaultFontSizes();
   @override

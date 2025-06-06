@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:origami_package/origami_package.dart';
 
-/// The default implementation of the [AbstractFontWeights] for the design system.
-class DefaultFontWeights extends AbstractFontWeights {
+/// The default implementation of the [OrigamiFontWeights] for the design system.
+class DefaultFontWeights extends OrigamiFontWeights {
   /// Creates a const instance of the default font weights.
   const DefaultFontWeights();
 

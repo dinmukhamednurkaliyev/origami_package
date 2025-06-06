@@ -2,9 +2,9 @@ import 'package:flutter/foundation.dart';
 
 @immutable
 /// A set of constant font sizes for the Origami design system.
-abstract class AbstractFontSizes {
+abstract class OrigamiFontSizes {
   /// A const constructor for classes that implement this interface.
-  const AbstractFontSizes();
+  const OrigamiFontSizes();
 
   /// Extra large font size.
   double get extraLarge;

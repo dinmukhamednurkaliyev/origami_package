@@ -16,30 +16,42 @@ abstract class OrigamiTypography {
   /// Text style for small body text.
   TextStyle get bodySmall;
 
-  /// Text style for button text.
-  TextStyle get button;
+  /// Text style for large display text.
+  TextStyle get displayLarge;
 
-  /// Text style for caption text. e.g., image captions, helper text.
-  TextStyle get caption;
+  /// Text style for medium display text.
+  TextStyle get displayMedium;
+
+  /// Text style for small display text.
+  TextStyle get displaySmall;
 
   /// Font families used in the typography.
-  AbstractFontFamilies get families;
+  OrigamiFontFamilies get families;
 
   /// Font sizes used in the typography.
-  AbstractFontSizes get fontSizes;
+  OrigamiFontSizes get fontSizes;
 
   /// Font weights used in the typography.
-  AbstractFontWeights get fontWeights;
+  OrigamiFontWeights get fontWeights;
 
   /// Text style for large headline text. e.g., Page titles.
-  TextStyle get headline1;
+  TextStyle get headlineLarge;
 
   /// Text style for medium headline text. e.g., Section titles.
-  TextStyle get headline2;
+  TextStyle get headlineMedium;
 
   /// Text style for small headline text. e.g., Card titles.
-  TextStyle get headline3;
+  TextStyle get headlineSmall;
+
+  /// Text style for large labels (e.g. button text).
+  TextStyle get labelLarge;
+
+  /// Text style for medium labels (e.g. button text).
+  TextStyle get labelMedium;
+
+  /// Text style for small labels (e.g. button text).
+  TextStyle get labelSmall;
 
   /// Line heights used in the typography.
-  AbstractLineHeights get lineHeights;
+  OrigamiLineHeights get lineHeights;
 }

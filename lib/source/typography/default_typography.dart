@@ -2,8 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:origami_package/origami_package.dart';
 
 /// The default implementation of the [OrigamiTypography] for the design system.
+///
+/// This class constructs text styles based on the Material Design 3 type scale
+/// (display, headline, body, label), using the provided design tokens.
 class DefaultTypography extends OrigamiTypography {
   /// Creates a const instance of the default typography.
+  ///
+  /// The design tokens can be overridden by passing custom implementations
+  /// to the constructor, allowing for flexible theming.
   const DefaultTypography({
     this.families = const DefaultFontFamilies(),
     this.fontSizes = const DefaultFontSizes(),
@@ -12,16 +18,19 @@ class DefaultTypography extends OrigamiTypography {
   });
 
   @override
-  final AbstractFontFamilies families;
+  final OrigamiFontFamilies families;
 
   @override
-  final AbstractFontSizes fontSizes;
+  final OrigamiFontSizes fontSizes;
 
   @override
-  final AbstractFontWeights fontWeights;
+  final OrigamiFontWeights fontWeights;
 
   @override
-  final AbstractLineHeights lineHeights;
+  final OrigamiLineHeights lineHeights;
+
+  // --- Body Styles ---
+  // Body styles are for the main content of the application.
 
   @override
   TextStyle get bodyLarge => TextStyle(
@@ -47,8 +56,65 @@ class DefaultTypography extends OrigamiTypography {
     height: lineHeights.medium,
   );
 
+  // --- Display Styles ---
+  // Display styles are for very large, short text, such as hero text on a splash screen.
+
   @override
-  TextStyle get button => TextStyle(
+  TextStyle get displayLarge => TextStyle(
+    fontFamily: families.secondary,
+    fontSize: fontSizes.extraLarge * 1.5,
+    fontWeight: fontWeights.bold,
+    height: lineHeights.tight,
+  );
+
+  @override
+  TextStyle get displayMedium => TextStyle(
+    fontFamily: families.secondary,
+    fontSize: fontSizes.extraLarge * 1.25,
+    fontWeight: fontWeights.bold,
+    height: lineHeights.tight,
+  );
+
+  @override
+  TextStyle get displaySmall => TextStyle(
+    fontFamily: families.secondary,
+    fontSize: fontSizes.extraLarge,
+    fontWeight: fontWeights.bold,
+    height: lineHeights.tight,
+  );
+
+  // --- Headline Styles ---
+  // Headline styles are for titles and headers on a screen.
+
+  @override
+  TextStyle get headlineLarge => TextStyle(
+    fontFamily: families.secondary,
+    fontSize: fontSizes.large, // 20.0
+    fontWeight: fontWeights.bold,
+    height: lineHeights.tight,
+  );
+
+  @override
+  TextStyle get headlineMedium => TextStyle(
+    fontFamily: families.secondary,
+    fontSize: fontSizes.medium, // 16.0
+    fontWeight: fontWeights.bold,
+    height: lineHeights.tight,
+  );
+
+  @override
+  TextStyle get headlineSmall => TextStyle(
+    fontFamily: families.secondary,
+    fontSize: fontSizes.small,
+    fontWeight: fontWeights.bold,
+    height: lineHeights.tight,
+  );
+
+  // --- Label Styles ---
+  // Label styles are for functional text, such as buttons and captions.
+
+  @override
+  TextStyle get labelLarge => TextStyle(
     fontFamily: families.primary,
     fontSize: fontSizes.small,
     fontWeight: fontWeights.medium,
@@ -57,34 +123,18 @@ class DefaultTypography extends OrigamiTypography {
   );
 
   @override
-  TextStyle get caption => TextStyle(
+  TextStyle get labelMedium => TextStyle(
+    fontFamily: families.primary,
+    fontSize: fontSizes.extraSmall,
+    fontWeight: fontWeights.medium,
+    height: lineHeights.tight,
+  );
+
+  @override
+  TextStyle get labelSmall => TextStyle(
     fontFamily: families.primary,
     fontSize: fontSizes.extraSmall,
     fontWeight: fontWeights.regular,
     height: lineHeights.medium,
-  );
-
-  @override
-  TextStyle get headline1 => TextStyle(
-    fontFamily: families.secondary,
-    fontSize: fontSizes.extraLarge,
-    fontWeight: fontWeights.bold,
-    height: lineHeights.tight,
-  );
-
-  @override
-  TextStyle get headline2 => TextStyle(
-    fontFamily: families.secondary,
-    fontSize: fontSizes.large,
-    fontWeight: fontWeights.bold,
-    height: lineHeights.tight,
-  );
-
-  @override
-  TextStyle get headline3 => TextStyle(
-    fontFamily: families.secondary,
-    fontSize: fontSizes.medium,
-    fontWeight: fontWeights.bold,
-    height: lineHeights.tight,
   );
 }

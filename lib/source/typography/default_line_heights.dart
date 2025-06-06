@@ -1,7 +1,7 @@
 import 'package:origami_package/origami_package.dart';
 
-/// The default implementation of the [AbstractLineHeights] for the design system.
-class DefaultLineHeights extends AbstractLineHeights {
+/// The default implementation of the [OrigamiLineHeights] for the design system.
+class DefaultLineHeights extends OrigamiLineHeights {
   /// Creates a const instance of the default line heights.
   const DefaultLineHeights();
 

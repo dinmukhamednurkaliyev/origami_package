@@ -56,24 +56,25 @@ abstract class OrigamiTheme {
     OrigamiTypography typography,
   ) {
     return base.copyWith(
-      displayLarge: typography.headline1,
-      displayMedium: typography.headline2,
-      displaySmall: typography.headline3,
+      displayLarge: typography.displayLarge,
+      displayMedium: typography.displayMedium,
+      displaySmall: typography.displaySmall,
 
-      headlineLarge: typography.headline1,
-      headlineMedium: typography.headline2,
-      headlineSmall: typography.headline3,
+      headlineLarge: typography.headlineLarge,
+      headlineMedium: typography.headlineMedium,
+      headlineSmall: typography.headlineSmall,
 
       titleLarge: typography.bodyLarge,
+      titleMedium: typography.bodyMedium,
+      titleSmall: typography.bodySmall,
 
       bodyLarge: typography.bodyLarge,
       bodyMedium: typography.bodyMedium,
       bodySmall: typography.bodySmall,
 
-      labelLarge: typography.button,
-      labelMedium: typography.button,
-
-      labelSmall: typography.caption,
+      labelLarge: typography.labelLarge,
+      labelMedium: typography.labelMedium,
+      labelSmall: typography.labelSmall,
     );
   }
 }
