@@ -8,13 +8,22 @@ abstract class OrigamiTheme {
   /// Returns the dark theme data for the application.
   static ThemeData get dark {
     final origamiTheme = OrigamiThemeData.dark();
-    return ThemeData.dark().copyWith(
+    final baseTheme = ThemeData.dark();
+
+    final origamiTextTheme = _buildOrigamiTextTheme(
+      baseTheme.textTheme,
+      origamiTheme.typography,
+    );
+
+    return baseTheme.copyWith(
+      textTheme: origamiTextTheme,
       extensions: <ThemeExtension<dynamic>>[origamiTheme],
       primaryColor: origamiTheme.colors.primary,
-      scaffoldBackgroundColor: origamiTheme.colors.background,
-      colorScheme: ThemeData.dark().colorScheme.copyWith(
+      scaffoldBackgroundColor: origamiTheme.colors.scaffoldBackgroundColor,
+      colorScheme: baseTheme.colorScheme.copyWith(
         primary: origamiTheme.colors.primary,
         secondary: origamiTheme.colors.secondary,
+        surface: origamiTheme.colors.surface,
       ),
     );
   }
@@ -22,15 +31,49 @@ abstract class OrigamiTheme {
   /// Returns the light theme data for the application.
   static ThemeData get light {
     final origamiTheme = OrigamiThemeData.light();
-    return ThemeData.light().copyWith(
-      extensions: <ThemeExtension<dynamic>>[origamiTheme],
+    final baseTheme = ThemeData.light();
 
+    final origamiTextTheme = _buildOrigamiTextTheme(
+      baseTheme.textTheme,
+      origamiTheme.typography,
+    );
+
+    return baseTheme.copyWith(
+      textTheme: origamiTextTheme,
+      extensions: <ThemeExtension<dynamic>>[origamiTheme],
       primaryColor: origamiTheme.colors.primary,
-      scaffoldBackgroundColor: origamiTheme.colors.background,
-      colorScheme: ThemeData.light().colorScheme.copyWith(
+      scaffoldBackgroundColor: origamiTheme.colors.scaffoldBackgroundColor,
+      colorScheme: baseTheme.colorScheme.copyWith(
         primary: origamiTheme.colors.primary,
         secondary: origamiTheme.colors.secondary,
+        surface: origamiTheme.colors.surface,
       ),
+    );
+  }
+
+  static TextTheme _buildOrigamiTextTheme(
+    TextTheme base,
+    OrigamiTypography typography,
+  ) {
+    return base.copyWith(
+      displayLarge: typography.headline1,
+      displayMedium: typography.headline2,
+      displaySmall: typography.headline3,
+
+      headlineLarge: typography.headline1,
+      headlineMedium: typography.headline2,
+      headlineSmall: typography.headline3,
+
+      titleLarge: typography.bodyLarge,
+
+      bodyLarge: typography.bodyLarge,
+      bodyMedium: typography.bodyMedium,
+      bodySmall: typography.bodySmall,
+
+      labelLarge: typography.button,
+      labelMedium: typography.button,
+
+      labelSmall: typography.caption,
     );
   }
 }

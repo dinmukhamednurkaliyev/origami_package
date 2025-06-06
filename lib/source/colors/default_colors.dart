@@ -8,16 +8,20 @@ class DefaultColors extends OrigamiColors {
   const DefaultColors();
 
   @override
-  // TODO: implement scaffoldBackground
-  Color get background => throw UnimplementedError();
-
-  @override
   // TODO: implement primary
   Color get primary => throw UnimplementedError();
 
   @override
+  // TODO: implement scaffoldBackground
+  Color get scaffoldBackgroundColor => throw UnimplementedError();
+
+  @override
   // TODO: implement secondary
   Color get secondary => throw UnimplementedError();
+
+  @override
+  // TODO: implement background
+  Color get surface => throw UnimplementedError();
 
   @override
   // TODO: implement text
