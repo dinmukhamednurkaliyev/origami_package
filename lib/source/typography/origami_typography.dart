@@ -16,14 +16,24 @@ abstract class OrigamiTypography {
   /// TextStyle get bodySmall;
   TextStyle get bodySmall;
 
+  /// Text style for button text.
   TextStyle get button;
 
+  /// Text style for caption text.
   TextStyle get caption;
 
+  /// Font families used in the typography.
   OrigamiFontFamilies get families;
+
+  /// Font sizes used in the typography.
   OrigamiFontSizes get fontSizes;
 
+  /// Text style for large headline text.
   TextStyle get headline1;
+
+  /// Text style for medium headline text.
   TextStyle get headline2;
+
+  /// Text style for small headline text.
   TextStyle get headline3;
 }

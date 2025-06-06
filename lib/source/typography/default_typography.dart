@@ -6,38 +6,25 @@ class DefaultTypography extends OrigamiTypography {
   /// Creates a const instance of the default typography values.
   const DefaultTypography();
 
-  static const String _fontFamily = 'YourFontFamily';
-
   @override
-  TextStyle get bodyLarge => const TextStyle(
-    fontFamily: _fontFamily,
-    fontSize: 16,
-    fontWeight: FontWeight.w400, // Regular
+  TextStyle get bodyLarge => TextStyle(
+    fontFamily: families.base,
+    fontSize: fontSizes.medium,
+    fontWeight: FontWeight.w400,
     height: 1.5,
   );
 
   @override
-  TextStyle get bodyMedium => bodyLarge.copyWith(fontSize: 14);
+  TextStyle get bodyMedium => bodyLarge.copyWith(fontSize: fontSizes.small);
 
   @override
-  TextStyle get bodySmall => bodyLarge.copyWith(fontSize: 12);
+  TextStyle get bodySmall => bodyLarge.copyWith(fontSize: fontSizes.extraLarge);
 
   @override
-  TextStyle get button => const TextStyle(
-    fontFamily: _fontFamily,
-    fontSize: 14,
-    fontWeight: FontWeight.w500, // Medium
-    height: 1.2,
-    letterSpacing: 0.5,
-  );
+  TextStyle get button => bodyMedium.copyWith(fontWeight: FontWeight.w500);
 
   @override
-  TextStyle get caption => const TextStyle(
-    fontFamily: _fontFamily,
-    fontSize: 12,
-    fontWeight: FontWeight.w400, // Regular
-    height: 1.2,
-  );
+  TextStyle get caption => bodySmall;
 
   @override
   OrigamiFontFamilies get families => const DefaultFontFamilies();
@@ -46,16 +33,16 @@ class DefaultTypography extends OrigamiTypography {
   OrigamiFontSizes get fontSizes => const DefaultFontSizes();
 
   @override
-  TextStyle get headline1 => const TextStyle(
-    fontFamily: _fontFamily,
-    fontSize: 32,
-    fontWeight: FontWeight.w700, // Bold
-    height: 1.25, // Line height
+  TextStyle get headline1 => TextStyle(
+    fontFamily: families.headings,
+    fontSize: fontSizes.extraLarge,
+    fontWeight: FontWeight.w700,
+    height: 1.25,
   );
 
   @override
-  TextStyle get headline2 => headline1.copyWith(fontSize: 28);
+  TextStyle get headline2 => headline1.copyWith(fontSize: fontSizes.extraLarge);
 
   @override
-  TextStyle get headline3 => headline1.copyWith(fontSize: 24);
+  TextStyle get headline3 => headline1.copyWith(fontSize: fontSizes.large);
 }
