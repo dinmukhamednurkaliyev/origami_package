@@ -64,9 +64,9 @@ abstract class OrigamiTheme {
       headlineMedium: typography.headlineMedium,
       headlineSmall: typography.headlineSmall,
 
-      titleLarge: typography.bodyLarge,
-      titleMedium: typography.bodyMedium,
-      titleSmall: typography.bodySmall,
+      titleLarge: typography.titleLarge,
+      titleMedium: typography.titleMedium,
+      titleSmall: typography.titleSmall,
 
       bodyLarge: typography.bodyLarge,
       bodyMedium: typography.bodyMedium,

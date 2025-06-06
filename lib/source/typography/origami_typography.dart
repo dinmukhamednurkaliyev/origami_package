@@ -54,4 +54,13 @@ abstract class OrigamiTypography {
 
   /// Line heights used in the typography.
   OrigamiLineHeights get lineHeights;
+
+  /// Text style for large titles.
+  TextStyle get titleLarge;
+
+  /// Text style for medium titles.
+  TextStyle get titleMedium;
+
+  /// Text style for small titles.
+  TextStyle get titleSmall;
 }

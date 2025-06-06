@@ -137,4 +137,30 @@ class DefaultTypography extends OrigamiTypography {
     fontWeight: fontWeights.regular,
     height: lineHeights.medium,
   );
+
+  // --- Title Styles ---
+  // Title styles are smaller than headlines, for component titles (e.g., AppBar, Card).
+  @override
+  TextStyle get titleLarge => TextStyle(
+    fontFamily: families.primary,
+    fontSize: fontSizes.large,
+    fontWeight: fontWeights.medium,
+    height: lineHeights.tight,
+  );
+
+  @override
+  TextStyle get titleMedium => TextStyle(
+    fontFamily: families.primary,
+    fontSize: fontSizes.medium,
+    fontWeight: fontWeights.medium,
+    height: lineHeights.tight,
+  );
+
+  @override
+  TextStyle get titleSmall => TextStyle(
+    fontFamily: families.primary,
+    fontSize: fontSizes.small,
+    fontWeight: fontWeights.medium,
+    height: lineHeights.tight,
+  );
 }
